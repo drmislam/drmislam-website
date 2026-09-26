@@ -10,6 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://drmislam.in"),
   title: "Dr M Islam",
   description: "Patient Management System",
   icons: {

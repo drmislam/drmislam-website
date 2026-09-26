@@ -100,7 +100,8 @@ export function PrescriptionActionsHeader({
     }
   };
 
-  const handleVisitChange = (visitId: string) => {
+  const handleVisitChange = (visitId: string | null) => {
+    if (!visitId) return;
     router.push(`/admin/patients/${patientDbId}/prescription/${prescriptionId}?visitId=${visitId}`);
   };
 

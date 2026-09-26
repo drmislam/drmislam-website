@@ -268,7 +268,6 @@ export function AppointmentForm() {
             selected={formData.date}
             onSelect={(date) => updateField("date", date)}
             disabled={(date) => date < new Date(new Date().setHours(0, 0, 0, 0))}
-            initialFocus
           />
         </PopoverContent>
       </Popover>
@@ -466,7 +465,6 @@ export function AppointmentForm() {
               </SelectTrigger>
 
               <SelectContent
-                position="popper"
                 sideOffset={6}
                 className="
                   min-w-[var(--radix-select-trigger-width)]
@@ -691,7 +689,6 @@ export function AppointmentForm() {
                 </SelectTrigger>
   
                 <SelectContent
-                  position="popper"
                   sideOffset={6}
                   className="
                     min-w-[var(--radix-select-trigger-width)]
